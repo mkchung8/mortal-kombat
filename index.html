@@ -9,6 +9,10 @@
     <!--Bootstrap Link-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!--Link to Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Ceviche+One|Shojumaru&display=swap" rel="stylesheet">
+
+
     <!--Link to external style sheet-->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
@@ -18,12 +22,65 @@
 
     <!--Link to jQuery Library-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
+
 
 </head>
+<!--Row 1 = Page Title & Media Player-->
+<div class=row>
+    <div class="col-md-12">
+        <img id="title-image" src="./assets/images/mortakkombat.jpg">
 
-<h1 id="title">Mortal Kombat Game</h1>
+    </div>
+</div>
+<!--Row 2 = Game Message-->
+<div class=row>
+    <div class="col-md-12">
+        <h1 id="game-message">Welcome to Mortal Kombat. Choose your fighter to begin.</h1>
+    </div>
+</div>
+<!--Row 3 = Character List-->
+<div class=row>
+    <div class="col-md-2">
+        <img class="character-image" src="./assets/images/mileena.jpg">
+    </div>
+    <div class="col-md-2">
+        <img class="character-image" src="./assets/images/johnnycage.jpg">
+    </div>
+    <div class="col-md-2">
+        <img class="character-image" src="./assets/images/raiden.jpg">
+    </div>
+    <div class="col-md-2">
+        <img class="character-image" src="./assets/images/scorpion.jpg">
+    </div>
+    <div class="col-md-2">
+        <img class="character-image" src="./assets/images/sindel.jpg">
+    </div>
+    <div class="col-md-2">
+        <img class="character-image" src="./assets/images/sonya.jpg">
+    </div>
+</div>
 
+<!--Row 4 = Main Content-->
+<div class=row>
+    <div class="col-md-4">
+        <h1 id="mdtitle">Your Player</h1>
+        <p id="player-name"></p>
+        <div id="player-div"></div>
+        <h2 id="player-health"></h2>
+    </div>
+    <div class="col-md-4">
+        <h1 id="versus"> VS. </h1>
+        <img id="logo" src="./assets/images/mklogo2.jpg">
+        <button type="button" class="btn btn-danger">Attack</button>
+    </div>
+    <div class="col-md-4">
+        <h1 id="mdtitle">Opponent</h1>
+        <p id="opponent-name"></p>
+        <div id="opponent-div"></div>
+        <h2 id="opponent-health"></h2>
+
+    </div>
+</div>
 
 <body>
     

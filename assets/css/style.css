@@ -1,8 +1,77 @@
+
+#title-image {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: none;
+    height: 150px;
+    padding-top: 0;
+  
+}
+
+#logo {
+    height: 300px;
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+.character-image {
+    height: 200px; 
+    width: 150px;
+    border-color: red;
+    border-style: solid; 
+    border-width: 5px;
+    margin: auto; 
+    display: block;
+}
+
 body {
     background: black;
+    background-image: url(./assets/images/characterbackground.gif);
 }
 
 h1 {
     color: red;
     text-align: center;
+    margin-top: none;
+    font-family: 'Shojumaru', cursive;
+    font-family: 'Ceviche One', cursive; 
+  
 }
+
+h1 {
+    font-family: 'Shojumaru', cursive;
+    font-family: 'Ceviche One', cursive;
+    font-size: 30px
+}
+
+#game-message {
+    font-family: 'Shojumaru', cursive;
+    font-family: 'Ceviche One', cursive; 
+    font-size: 40px;
+    padding-bottom: 50px;
+    margin: auto;
+}
+
+#versus {
+    font-family: 'Shojumaru', cursive;
+    font-family: 'Ceviche One', cursive; 
+    font-size: 40px;
+    margin: auto;
+    padding-top: 40px;
+}
+
+#mdtitle {
+    font-family: 'Shojumaru', cursive;
+    font-family: 'Ceviche One', cursive; 
+    font-size: 40px;
+    margin: auto;
+    padding-top: 40px;
+}
+
+button.btn.btn-danger {
+    margin: auto;
+    display: block;
+}
+
