@@ -34,24 +34,24 @@ body {
 h1 {
     color: red;
     text-align: center;
-    margin-top: none;
+    margin: auto;
+    display: block;
     font-family: 'Shojumaru', cursive;
     font-family: 'Ceviche One', cursive; 
+    font-size: 40px;
   
 }
 
-h1 {
-    font-family: 'Shojumaru', cursive;
-    font-family: 'Ceviche One', cursive;
-    font-size: 30px
-}
+
 
 #game-message {
     font-family: 'Shojumaru', cursive;
     font-family: 'Ceviche One', cursive; 
-    font-size: 40px;
-    padding-bottom: 50px;
+    font-size: 60px;
+    display: block; 
     margin: auto;
+    
+
 }
 
 #versus {
