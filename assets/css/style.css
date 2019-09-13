@@ -16,6 +16,20 @@
     margin: auto;
 }
 
+.character-div {
+    margin: auto; 
+    display: block;
+    font-family: 'Shojumaru', cursive;
+    font-family: 'Ceviche One', cursive;
+    color: yellow;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+
+
+
 .character-image {
     height: 200px; 
     width: 150px;
@@ -50,8 +64,7 @@ h1 {
     font-size: 60px;
     display: block; 
     margin: auto;
-    
-
+    color: red;
 }
 
 #versus {
