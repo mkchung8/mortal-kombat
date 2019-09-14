@@ -14,32 +14,21 @@ $(document).ready(function(){
     };
 
     //Setting game variables
-    var turnLock = false; 
+    var turnLock = true; 
     var characterLock = false;
     var player;
     var opponent;
     var attackMultiplier; 
     var playerHealth = 100; 
     var oppponentHealth = 100; 
-    var fightList = []; 
+    var opponentList = []; 
     var playerHealth; 
     var opponentHealth;
 
-    var startCharacters = function (character, characterArea) {
-        var characterDiv = $('<div class="character-div" character-id="' + character.id + '">')
-        var characterName = $('<div class="character-name>').text(character.name);
-        var characterImage = $('<img class="character-image">').attr("src",character.pic);
-        characterDiv.append(characterName).append(characterImage);
-        $(characterArea).append(characterDiv);
-    };
+    initializeGame();
+    playerPick();
 
-
-
-
-        
-  
-
-//Function to initialize the game by loading characters into the character div
+    
     function initializeGame () {
 
         //Starting game message 
@@ -49,10 +38,30 @@ $(document).ready(function(){
             startCharacters(characterList[key],"#character-list");
         };
      };
+     
 
-     initializeGame();
+    function playerPick (charObj){
+        $(".character-div").on("click", function(){
+            var playerId = $(this).attr("character-id");
+            $(this).remove();
+            var playerDiv = $('<div class="player-selected" character-id="' + playerId + '">');
+
+        });
+
+    };
+
+    function opponentPick (charObj) {
+
+    };
+    
         //playerPick();
      //   opponentPick();
-        
+     function startCharacters (character, characterArea) {
+        var characterDiv = $('<div class="character-div" character-id="' + character.id + '">');
+        var characterName = $('<div class="character-name">').text(character.name);
+        var characterImage = $('<img class="character-image">').attr("src",character.pic);
+        characterDiv.append(characterName).append(characterImage);
+        $(characterArea).append(characterDiv);
+    };    
 
 });

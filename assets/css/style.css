@@ -28,7 +28,11 @@
 }
 
 
+.select-name-display {
+    color: yellow;
 
+
+}
 
 .character-image {
     height: 200px; 
@@ -50,7 +54,7 @@ h1 {
     text-align: center;
     margin: auto;
     display: block;
-    font-family: 'Shojumaru', cursive;
+    
     font-family: 'Ceviche One', cursive; 
     font-size: 40px;
   
