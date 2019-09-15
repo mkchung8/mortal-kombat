@@ -17,7 +17,7 @@ $(document).ready(function(){
     var turnLock = true; 
     var characterLock = false;
     var player;
-    var playerId;
+    var playerLock = [];
     var opponent;
     var attackMultiplier; 
     var playerHealth = 100; 
@@ -26,9 +26,9 @@ $(document).ready(function(){
     var opponentHealth;
     var opponentList = [];
 
-    initializeGame();
+
     
-    opponentPick();
+ 
     function initializeGame () {
 
         //Starting game message 
@@ -41,7 +41,6 @@ $(document).ready(function(){
 
      };
     
-     
 
      function startCharacters (character, characterArea) {
         var characterDiv = $('<div class="character-div" character-id="' + character.id + '">')
@@ -52,31 +51,46 @@ $(document).ready(function(){
         opponentList.push(character.id);
     };    
 
+    
+   $("#character-list").on("click", ".character-div", function (){
+        var idPick = $(this).attr("character-id");
+        playerLock.push(idPick);
+   });
 
+   if (playerLock.length === 0) {
+    initializeGame();
+   } else {
+       playerSet();
+       opponentSet();
+       gamePlay();
+   };
+
+   
+   function playerSet() {
+        
+   };
+
+   function opponentSet (opponent) {
+       
+   };
+   function gamePlay (){};
     
    
-        
-        $("#character-list").on("click", ".character-div", function(){
+      /*  $("#character-list").on("click", ".character-div", function(){
             var playerId = $(this).attr("character-id");
             $(this).remove();
             $("#player-div").append($(this));
             characterLock = true;
-        }); 
+        }); */
         
-        if (characterLock === true) {
-            $("#character-list").attr("id", "opponent-list");
-            alert("characterlock")
-        } else {
+        
+        
+    // create array of opponents
 
-        };
+    //start fighting
+
     
 
-    
-
-    function opponentPick(){
-        
-
-    };
    
     
 
