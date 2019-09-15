@@ -26,7 +26,7 @@ $(document).ready(function(){
     var opponentHealth;
     var opponentList = [];
 
-
+    initializeGame();
     
  
     function initializeGame () {
@@ -55,46 +55,49 @@ $(document).ready(function(){
    $("#character-list").on("click", ".character-div", function (){
         var idPick = $(this).attr("character-id");
         playerLock.push(idPick);
-   });
 
-   if (playerLock.length === 0) {
-    initializeGame();
-   } else {
-       playerSet();
-       opponentSet();
-       gamePlay();
-   };
+        if (playerLock.length === 0) {
+            initializeGame();
+           } else if (playerLock.length > 0) {
+                
+               $(this).remove();
+               var player = $("#player-div")
+               player.append($(this)); 
+               playerSet();
+               opponentUpdate();
+               opponentSet();
+               gamePlay();
+           };
+        
+   });
+   
+
 
    
-   function playerSet() {
+   
+   function playerSet(character, playerArea) {
+
+        var playerSet = $('<div class="player-card character-id="' + playerLock[0] + '">');
+        var playerId = playerLock[0];
+        var playerName = $("")
+        
+        
         
    };
 
-   function opponentSet (opponent) {
+   function opponentUpdate (opponent) {
+       opponentList = opponentList.filter(e => e !== playerLock[0]);
+       
+       
        
    };
+
+   function opponentSet (){
+
+   }
    function gamePlay (){};
     
    
-      /*  $("#character-list").on("click", ".character-div", function(){
-            var playerId = $(this).attr("character-id");
-            $(this).remove();
-            $("#player-div").append($(this));
-            characterLock = true;
-        }); */
-        
-        
-        
-    // create array of opponents
-
-    //start fighting
-
-    
-
-   
-    
-
-    
 
     
 });
