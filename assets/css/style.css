@@ -92,3 +92,20 @@ button.btn.btn-danger {
     display: block;
 }
 
+.health-display {
+    background: black;
+    text-align: center;
+    font-family: 'Shojumaru', cursive;
+    font-family: 'Ceviche One', cursive; 
+    font-size: 30px;
+    color: orangered;
+}
+
+.btn-danger {
+    background-color: red;
+    font-family: 'Shojumaru', cursive;
+    font-family: 'Ceviche One', cursive; 
+    color: black;
+    font-size: 30px;
+}
+
