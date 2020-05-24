@@ -30,8 +30,6 @@
 
 .select-name-display {
     color: yellow;
-
-
 }
 
 .character-image {
@@ -46,7 +44,9 @@
 
 body {
     background: black;
-    
+    background-image: url("../images/characterbackground.gif"); 
+    background-repeat: repeat-x; 
+    background-position: center bottom; 
 }
 
 h1 {
@@ -90,6 +90,12 @@ h1 {
 button.btn.btn-danger {
     margin: auto;
     display: block;
+}
+
+button.btn.btn-dark {
+    color: red; 
+    padding: 5px;
+    min-width: 50px; 
 }
 
 .health-display {
