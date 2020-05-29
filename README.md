@@ -45,5 +45,5 @@ The player wins the game by defeating all enemy characters. The player loses the
 #### Code Created and Maintained by: 
 Miyoung K. Chung 
 mkchung.8@gmail.com
-https://www.github.com/mkchung8/
+https://www.miyoungchung.com/
 https://www.linkedin.com/in/mkchung8/
