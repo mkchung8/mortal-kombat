@@ -46,16 +46,17 @@ $(document).ready(function () {
 
     // Theme Song Controls 
     var audioElement = document.createElement("audio");
-    audioElement.setAttribute("src", "assets/mkthemesong.mp3");
-
+        audioElement.setAttribute("src", "assets/mkthemesong.mp3");
+    // play button
     $(".play-button").on("click", function () {
         audioElement.play();
     });
-
+    // pause button 
     $(".pause-button").on("click", function () {
         audioElement.pause();
     });
-
+    
+    // Finish Him Function 
     function finishHim() {
         playMessageClear();
         messageClear(); 
@@ -75,8 +76,7 @@ $(document).ready(function () {
     var playerHealth;
     var opponentHealth;
     var playerAttack;
-    var opponentAttack;
-    var playerCounterAttack;
+    var opponentAttack; 
     var opponentCounterAttack;
 
     // Function for handling game messages during play 
