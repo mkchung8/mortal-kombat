@@ -85,23 +85,27 @@ $(document).ready(function () {
         var newMessage = $("<div>").text(message);
         messageBoard.append(newMessage);
     };
-
+    
+    // Function for rendering play message on game board. 
     const renderPlayMessage = function (message) {
         var messageBoard = $("#play-message");
         var newMessage = $("<div>").text(message);
         messageBoard.append(newMessage);
-    }
+    }; 
 
+    // Function to clear message area. 
     const messageClear = function () {
         var messageBoard = $("#game-message");
         messageBoard.text("");
-    }
+    }; 
 
+    // Function to render message #2
     const playMessageClear = function () {
         var messageBoard = $("#play-message");
         messageBoard.text("");
-    }
+    }; 
 
+    // Initialize Characters to Board.
     function startCharacters(character, characterArea) {
 
         var characterDiv = $(`<div class = "character-div" 
